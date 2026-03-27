@@ -33,8 +33,8 @@ title: "Luique - CV Resume & Personal Portfolio Jekyll Theme"
 email: "your-email@example.com"
 description: "Jekyll Resume / CV / vCard / Portfolio and Personal Portfolio by bslthemes"
 author: "Luique"
-baseurl: "/luique26" # the subpath of your site, e.g. /blog
-url: "https://kopo-kangseo-cybersec.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://papalooo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 date_format: "%Y-%m-%d"
 
 # paginations & permalinks
