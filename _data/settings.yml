@@ -4,13 +4,13 @@
 
 ### Main Settings
 settings:
-  skin: "light" # select initial skin option: "light" or "dark"
+  skin: "dark" # select initial skin option: "light" or "dark"
 
 ### Preloader
 preloader:
   logo:
     image: "assets/img/logo2.png"
-    alt: "Zoé Miller"
+    alt: "장수혁"
 
 ### Header
 header:
@@ -41,14 +41,11 @@ footer:
 portfolio:
   layout: "list" # select works layout options: "Grid" or "List"
   filters:
-    - name: "UI UX Design"
-      slug: "ui-ux-design"
-
-    - name: "Photography"
-      slug: "photography"
+    - name: "Hacking & CyberSecurity"
+      slug: "hc"
 
     - name: "Development"
       slug: "development"
 
-    - name: "Branding"
-      slug: "branding"
+    - name: "environment setup"
+      slug: "environment-setup"

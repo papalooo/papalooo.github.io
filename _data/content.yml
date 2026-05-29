@@ -58,33 +58,33 @@ skills:
 
   column1:
     items:
-      - label: "Python"
-        text: "자동화 스크립트, 보안 도구 개발, 데이터 처리"
+      - label: "Python / Rust"
+        text: "보안 자동화 스크립트 및 취약점 스캐너(APAT) 등 커스텀 도구 개발"
         value: "80"
 
-      - label: "Linux / Bash"
-        text: "서버 관리, 쉘 스크립팅, 네트워크 도구 활용"
-        value: "75"
+      - label: "Linux (Arch / Bash)"
+        text: "Arch Linux 환경 구축 및 최적화, 쉘 스크립팅, chezmoi 기반 도트파일 관리"
+        value: "80"
 
   column2:
     items:
-      - label: "네트워크 보안"
-        text: "패킷 분석, 방화벽 설정, IDS/IPS 운영"
-        value: "70"
+      - label: "모의해킹 / 취약점 분석"
+        text: "웹·시스템 취약점 분석, POC 작성 및 HTB / TryHackMe 플랫폼 기반 실습"
+        value: "75"
 
-      - label: "웹 취약점 분석"
-        text: "OWASP Top 10, Burp Suite, SQL Injection"
-        value: "65"
+      - label: "보안 프레임워크 및 방법론"
+        text: "MITRE ATT&CK 및 PTES 방법론 분석, Obsidian 기반 보안 지식 베이스 구축"
+        value: "70"
 
   column3:
     items:
-      - label: "데이터베이스"
-        text: "MySQL, SQLite, 기본 쿼리 및 보안 설정"
-        value: "60"
+      - label: "AI 연동 및 자동화"
+        text: "Gemini API 기반 LLM 연동, 자동화 취약점 분석 알고리즘 설계 및 검증"
+        value: "70"
 
       - label: "Git / GitHub"
-        text: "버전 관리, 협업 워크플로우, GitHub Pages 배포"
-        value: "70"
+        text: "프로젝트 형상 관리, 소스코드 버전 제어 및 레포지토리 운영"
+        value: "75"
 
 ### Resume [ resume ]
 resume:
@@ -99,19 +99,17 @@ resume:
         subname: "software development"
         period: "2020 - 2023"
         text: "전문 계열 소프트웨어 개발과로, 다양한 프로그래밍 언어와 프로젝트 경험을 쌓았습니다."
-
       - name: "폴리텍 대학 강서캠퍼스"
         subname: "사이버보안과"
         period: "2023 - 2026"
         text: "사이버 보안 분야에 특화된 교육을 받으며, 실무 중심의 학습을 통해 전문성을 키웠습니다."
-  
   experience:
-  title: "경력 및 활동"
-  items:
-    - name: "보안 동아리"
-      subname: "광주소프트웨어마이스터고등학교"
-      period: "2022 - <b>2022</b>"
-      text: "교내 보안 동아리를 이끌며 주간 스터디 운영. 팀원 3명과 함께 CTF 문제 풀이 및 보안 이슈 공유. 사이버보안지방기능경기대회에서 금상 수상"
+    title: "경력"
+    items:
+      - name: "보안 동아리"
+        subname: "광주소프트웨어마이스터고등학교"
+        period: "2022 - <b>2022</b>"
+        text: "교내 보안 동아리를 이끌며 주간 스터디 운영. 팀원 3명과 함께 CTF 문제 풀이 및 보안 이슈 공유. 사이버보안지방기능경기대회에서 금상 수상"
 
 ### Testimonials [ testimonials ]
 testimonials:
