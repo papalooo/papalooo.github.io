@@ -6,17 +6,17 @@
 ### Hero [ hero-image ]
 hero:
   image: "assets/img/profile.png"
-  image_alt: "이태원"
+  image_alt: "장수혁"
   before_title: "환영합니다, <b>제 이름은</b>"
-  title: "<b>Taewon</b> Lee"
+  title: "<b>Suhyeok </b> Jang"
   after_title: "I am <strong>Cyber Security Professional</strong>"
   description: "폴리텍 대학 강서캠퍼스 사이버 보안과 2학년 입니다."
   button1:
-    label: "이력서 다운받기"
-    link: "#"
+    label: "이력서 보기"
+    link: "#resume-section"
   button2:
-    label: "My Skills"
-    link: "#skills-section"
+    label: "포트폴리오 보기"
+    link: "#portfolio-section"
   bg_title: "Cyber Security"
   info:
     - num: "2 <strong>+</strong>"
@@ -27,119 +27,91 @@ hero:
 
 ### Services [ services ]
 services:
-  title: "What I Do"
-  subtitle: "my <b>Services</b>"
+  title: "전문 분야"
+  subtitle: "핵심 <b>역량</b>"
   bg_title: "Services"
 
   items:
-    - title: "Web Design &amp; Logo"
-      subtitle: "Web Development"
-      text: "Web designers craft the overall vision &amp; plan for a website layout. Professional logo development: Business, Company, or Personal."
-      button_label: "See Pricing"
-      button_link: "#pricing-section"
+    - title: "보안 취약점 분석"
+      subtitle: "Penetration Testing"
+      text: "웹 애플리케이션과 네트워크 환경의 취약점을 식별하고 보고서를 작성합니다. OWASP Top 10 기반으로 분석합니다."
+      button_label: "연락하기"
+      button_link: "#contacts-section"
 
-    - title: "iOS &amp; Android"
-      subtitle: "Apps Development"
-      text: "Design Software applications to run on mobile devices. Modern and mobile-ready application that will help you reach all of your marketing."
-      button_label: "See Pricing"
-      button_link: "#pricing-section"
+    - title: "보안 도구 개발"
+      subtitle: "Python / Bash"
+      text: "반복 작업 자동화와 보안 점검을 위한 스크립트 및 도구를 개발합니다."
+      button_label: "포트폴리오 보기"
+      button_link: "#portfolio-section"
 
-    - title: "Unity &amp; Unreal Engine"
-      subtitle: "Game Development"
-      text: "Creating games &amp; describes the design, development and release of a game. Developing unique mobile android and ios games."
-      button_label: "See Pricing"
-      button_link: "#pricing-section"
-
-    - title: "Google Ads"
-      subtitle: "Advertising"
-      text: "Advertising services include: Google search result pages, gmails, YouTube and other websites participated in Google Ads program."
-      button_label: "See Pricing"
-      button_link: "#pricing-section"
-
-    - title: "Sound Track"
-      subtitle: "Music Writing"
-      text: "Music copying, writing, creating, transcription and composition services."
-      button_label: "See Pricing"
-      button_link: "#pricing-section"
+    - title: "보안 교육 및 문서화"
+      subtitle: "Technical Writing"
+      text: "학습한 내용을 블로그로 정리하고, 팀원들과 지식을 공유합니다."
+      button_label: "블로그 보기"
+      button_link: "blog/"
 
 ### Skills [ skills ]
 skills:
-  title: "Professional Skills"
-  subtitle: "my <b>Talent</b>"
+  title: "기술 역량"
+  subtitle: "보유 <b>스킬</b>"
   bg_title: "Skills"
 
   column1:
     items:
-      - label: "PHP" #0-10 progress in dots
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        value: "85" #0-100 progress in %
+      - label: "Python"
+        text: "자동화 스크립트, 보안 도구 개발, 데이터 처리"
+        value: "80"
 
-      - label: "Python" #0-10 progress in dots
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        value: "75" #0-100 progress in %
+      - label: "Linux / Bash"
+        text: "서버 관리, 쉘 스크립팅, 네트워크 도구 활용"
+        value: "75"
 
   column2:
     items:
-      - label: "JavaScript" #0-10 progress in dots
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        value: "75" #0-100 progress in %
+      - label: "네트워크 보안"
+        text: "패킷 분석, 방화벽 설정, IDS/IPS 운영"
+        value: "70"
 
-      - label: "React" #0-10 progress in dots
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        value: "70" #0-100 progress in %
+      - label: "웹 취약점 분석"
+        text: "OWASP Top 10, Burp Suite, SQL Injection"
+        value: "65"
 
   column3:
     items:
-      - label: "WordPress" #0-10 progress in dots
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        value: "90" #0-100 progress in %
+      - label: "데이터베이스"
+        text: "MySQL, SQLite, 기본 쿼리 및 보안 설정"
+        value: "60"
 
-      - label: "Adobe XD" #0-10 progress in dots
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        value: "80" #0-100 progress in %
+      - label: "Git / GitHub"
+        text: "버전 관리, 협업 워크플로우, GitHub Pages 배포"
+        value: "70"
 
 ### Resume [ resume ]
 resume:
-  title: "Resume"
-  subtitle: "my <b>Story</b>"
+  title: "이력서"
+  subtitle: "학력 및 <b>경력</b>"
   bg_title: "History"
 
   education:
-    title: "Education"
+    title: "학력"
     items:
-      - name: "CoderHouse Courses"
-        subname: "Backend Programming"
-        period: "2014 - 2016"
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      - name: "광주소프트웨어마이스터고등학교"
+        subname: "software development"
+        period: "2020 - 2023"
+        text: "전문 계열 소프트웨어 개발과로, 다양한 프로그래밍 언어와 프로젝트 경험을 쌓았습니다."
 
-      - name: "Lviv National Academy of Arts"
-        subname: "Faculty of Design"
-        period: "2012 - 2014"
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-
-      - name: "IT Future"
-        subname: "High School"
-        period: "2010 - 2012"
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-
+      - name: "폴리텍 대학 강서캠퍼스"
+        subname: "사이버보안과"
+        period: "2023 - 2026"
+        text: "사이버 보안 분야에 특화된 교육을 받으며, 실무 중심의 학습을 통해 전문성을 키웠습니다."
+  
   experience:
-    title: "Experience"
-    items:
-      - name: "UI Head &amp; Manager"
-        subname: "Soft Tech Inc."
-        period: "2020 - <b>Present</b>"
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-
-      - name: "UI / UX Specialist"
-        subname: "Kana Design Studio"
-        period: "2018 - 2020"
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-
-      - name: "Plugins Developer"
-        subname: "Fiverr.com"
-        period: "2016 - 2018"
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-
+  title: "경력 및 활동"
+  items:
+    - name: "보안 동아리"
+      subname: "광주소프트웨어마이스터고등학교"
+      period: "2022 - <b>2022</b>"
+      text: "교내 보안 동아리를 이끌며 주간 스터디 운영. 팀원 3명과 함께 CTF 문제 풀이 및 보안 이슈 공유. 사이버보안지방기능경기대회에서 금상 수상"
 
 ### Testimonials [ testimonials ]
 testimonials:
@@ -250,26 +222,24 @@ blog:
 
 ### Contact [ contacts ]
 contacts:
-  title: "Contact Me"
-  subtitle: "Let’s <b>Talk About Ideas</b>"
-  bg_title: "Contact Me"
+  title: "연락하기"
+  subtitle: "<b>문의</b>하기"
+  bg_title: "Contact"
 
   list:
-    - label: "Address"
+    - label: "위치"
       icon: "far fa-map"
-      text: "North Tower, Toronto, Canada"
+      text: "서울특별시 강서구"
 
-    - label: "Freelance"
-      icon: "far fa-user"
-      text: "Available Right Now"
-
-    - label: "Email"
+    - label: "이메일"
       icon: "far fa-envelope"
-      text: "zoe.miller@mydomain.com"
+      text: "papalooo@naver.com"
+      link: "mailto:hong@example.com"
 
-    - label: "Phone"
-      icon: "far fa-address-book"
-      text: "+1 900 - 900 - 9000"
+    - label: "GitHub"
+      icon: "fab fa-github"
+      text: "github.com/papalooo"
+      link: "https://github.com/papalooo"
 
 ### Portfolio [ portfolio ]
 #items generates from dir /_works/*

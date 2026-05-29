@@ -16,13 +16,13 @@ preloader:
 header:
   logo:
     image: "assets/img/logo2.png"
-    alt: "Zoé Miller"
+    alt: "장수혁"
 
 ### Social
 social:
-  - title: "Twitter"
-    icon: "fab fa-twitter"
-    url: "http://twitter.com"
+  - title: "Github"
+    icon: "fab fa-github"
+    url: "http://github.com/papalooo"
 
   - title: "Dribbble"
     icon: "fab fa-dribbble"
@@ -34,8 +34,8 @@ social:
 
 ### Footer
 footer:
-  developer: "Developed by <strong>bslthemes</strong>"
-  copyright: "<strong>Luique</strong>. All rights reserved"
+  developer: "개발 - <strong>장수혁</strong>"
+  copyright: "<strong>장수혁 포트폴리오</strong>. All rights reserved"
 
 ### Portfolio Filters Settings
 portfolio:
