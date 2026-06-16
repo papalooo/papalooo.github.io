@@ -1,0 +1,45 @@
+/* Luique - Light Skin Styles */
+
+body.light-skin {
+	color: #1a4a1a;
+	background: #e0e0e0;
+	font-family: 'JetBrains Mono', 'Noto Sans KR', monospace;
+}
+
+.light-skin h1,
+.light-skin h2,
+.light-skin h3,
+.light-skin h4,
+.light-skin h5,
+.light-skin h6,
+.light-skin .m-title {
+	color: #1a4a1a;
+	font-family: 'JetBrains Mono', 'Noto Sans KR', monospace;
+}
+
+.light-skin a.lnk,
+.light-skin .lnk {
+	color: #1a4a1a;
+}
+
+.light-skin a.btn,
+.light-skin .btn,
+.light-skin button {
+    color: #fff !important;
+    background: linear-gradient(45deg, #008f11 0%, #1a4a1a 100%);
+    border-color: #1a4a1a;
+}
+
+.light-skin input[type="text"],
+.light-skin textarea {
+    background: #d0d0d0;
+    border: 2px solid #1a4a1a;
+    color: #1a4a1a;
+}
+
+.light-skin .services-item,
+.light-skin .works-items .works-item,
+.light-skin .blog-items .archive-item {
+    background: #d0d0d0;
+    border: 1px solid rgba(26, 74, 26, 0.2);
+}

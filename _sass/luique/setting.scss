@@ -13,15 +13,22 @@ Version: 1.0
 */
 
 /* Background Colors */
-$default_bg: #222a36;
-$second_bg: #181e27;
+$default_bg: #000000;
+$second_bg: #0d0d0d;
 
 /* Colors */
-$default_color: #fff;
-$white_color: #FFF;
+$default_color: #00ff41;
+$white_color: #00ff41;
 $dark_color: #000;
-$active_color: #ff8059;
-$error_color: red;
+$active_color: #00ff41;
+$error_color: #ff0000;
+
+/* Hacker Palette Extensions */
+$deep_green: #003b00;
+$mid_green: #008f11;
+$bright_green: #39ff14;
+$dark_grey: #0d0d0d;
+$v_dark_grey: #050505;
 
 /* SETTINGS VARIABLES FOR LIGHT UI
 	- Background Colors
@@ -29,15 +36,15 @@ $error_color: red;
 */
 
 /* Background Colors */
-$light_default_bg: #f7f5f2;
-$light_second_bg: #ebe7e0;
+$light_default_bg: #e0e0e0;
+$light_second_bg: #d0d0d0;
 
 /* Colors */
-$light_default_color: #1c2528;
-$light_white_color: #FFF;
+$light_default_color: #1a4a1a;
+$light_white_color: #1a4a1a;
 $light_dark_color: #000;
-$light_active_color: #68e0cf;
-$light_error_color: red;
+$light_active_color: #008f11;
+$light_error_color: #cc0000;
 
 /* SETTINGS VARIABLES FOR TYPOGRAPHY
 	- Fonts
@@ -48,8 +55,8 @@ $light_error_color: red;
 */
 
 /* Fonts */
-$default_font: 'Rubik';
-$extra_font: 'Sorts Mill Goudy';
+$default_font: 'JetBrains Mono', 'Noto Sans KR', monospace;
+$extra_font: 'JetBrains Mono', 'Noto Sans KR', monospace;
 
 /* Fonts Size */
 
