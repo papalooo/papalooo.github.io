@@ -51,19 +51,19 @@ Version: 1.0
 }
 
 ::-webkit-input-placeholder {
-	color: rgba(0, 0, 0, 0.5);
+	color: rgba(0, 255, 65, 0.5);
 }
 
 ::-moz-placeholder {
-	color: rgba(0, 0, 0, 0.5);
+	color: rgba(0, 255, 65, 0.5);
 }
 
 :-moz-placeholder {
-	color: rgba(0, 0, 0, 0.5);
+	color: rgba(0, 255, 65, 0.5);
 }
 
 :-ms-input-placeholder {
-	color: rgba(0, 0, 0, 0.5);
+	color: rgba(0, 255, 65, 0.5);
 }
 
 html,
@@ -72,8 +72,8 @@ body {
 	padding: 0;
 	height: auto !important;
 	font-size: 16px;
-	color: #262626;
-	font-family: "Jost", sans-serif;
+	color: $default_color;
+	font-family: $default_font;
 	font-weight: 400;
 	line-height: 1.7;
 	-webkit-font-smoothing: antialiased;
@@ -81,7 +81,9 @@ body {
 }
 
 body {
-	background-color: #F0EBE3;
+	background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+	background-size: 100% 2px, 3px 100%;
+	background-color: #000;
 }
 
 body.no-scroll {
@@ -89,7 +91,7 @@ body.no-scroll {
 }
 
 a {
-	color: #29a587;
+	color: $active_color;
 	text-decoration: none;
 	cursor: pointer;
 	outline: none;
@@ -98,15 +100,15 @@ a {
 }
 
 a:link {
-	color: #29a587;
+	color: $active_color;
 }
 
 a:active {
-	color: #29a587;
+	color: $active_color;
 }
 
 a:visited {
-	color: #29a587;
+	color: $active_color;
 }
 
 a:hover {
@@ -124,7 +126,7 @@ img {
 input,
 textarea,
 button {
-	font-family: "Jost";
+	font-family: $default_font;
 }
 
 label {
@@ -164,10 +166,10 @@ h5,
 h6,
 .m-title {
 	font-weight: 400;
-	font-family: "Jost";
+	font-family: $default_font;
 	margin: 0;
 	margin-bottom: 15px;
-	color: #000;
+	color: $default_color;
 	font-weight: 700;
 	line-height: 1.3;
 }
@@ -228,7 +230,7 @@ a.lnk,
 	display: inline-block;
 	vertical-align: top;
 	font-size: 16px;
-	color: #000;
+	color: $default_color;
 	font-weight: 700;
 	text-decoration: none;
 	transition: all 0.7s cubic-bezier(0.3, 0, 0.3, 1);
@@ -244,7 +246,7 @@ a.lnk:after,
 	top: 1px;
 	font-family: 'Font Awesome 5 Free';
 	font-weight: 900;
-	color: #29a587;
+	color: $active_color;
 	transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 	-webkit-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 }
@@ -263,7 +265,7 @@ a.btn-lnk,
 	display: inline-block;
 	vertical-align: top;
 	font-size: 13px;
-	color: #000;
+	color: $default_color;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
@@ -281,7 +283,7 @@ a.btn-lnk:before,
 	margin-top: -1px;
 	height: 2px;
 	width: 40px;
-	background: #000;
+	background: $default_color;
 }
 
 a.btn,
@@ -296,7 +298,7 @@ input[type="submit"] {
 	display: inline-block;
 	vertical-align: top;
 	font-size: 13px;
-	color: #000;
+	color: #000 !important;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
@@ -308,16 +310,16 @@ input[type="submit"] {
 	cursor: pointer;
 	transition: all 0.7s cubic-bezier(0.3, 0, 0.3, 1);
 	-webkit-transition: all 0.7s cubic-bezier(0.3, 0, 0.3, 1);
-  border: 2px solid #000;
-  background: transparent;
-  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+  border: 2px solid #00ff41;
+  background: linear-gradient(45deg, #008f11 0%, #00ff41 100%);
+  box-shadow: 5px 5px rgba(0, 255, 65, 0.2);
 	border-radius: 56px;
 	-webkit-border-radius: 56px;
 }
 
 .btn.btn-solid,
 .elementor .btn.btn-solid {
-	color: #fff;
+	color: $white_color;
 }
 
 .btn-solid:after,
@@ -328,7 +330,7 @@ input[type="submit"] {
 	top: 0;
 	font-family: 'Font Awesome 5 Free';
 	font-weight: 900;
-	color: #fff;
+	color: $white_color;
 	transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 	-webkit-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 	z-index: 2;
@@ -340,8 +342,8 @@ input[type="submit"] {
 }
 
 input[type="submit"] {
-	color: #FFF;
-	background: #29a587;
+	color: $white_color;
+	background: $active_color;
 	outline: none;
 	cursor: pointer;
 }
@@ -355,7 +357,7 @@ button:before {
 	top: 50%;
 	width: 0%;
 	height: 0%;
-	background: #29a587;
+	background: $active_color;
 	transition: all 0.6s cubic-bezier(0.3, 0, 0.3, 1);
 	-webkit-transition: all 0.6s cubic-bezier(0.3, 0, 0.3, 1);
 	transform: translate(-50%, -50%);
@@ -382,7 +384,8 @@ button span {
 a.btn:hover,
 .btn:hover,
 button:hover {
-	color: #FFF;
+	background: linear-gradient(45deg, #00ff41 0%, #008f11 100%);
+	color: $white_color;
 }
 
 a.btn:hover:before,
@@ -409,14 +412,14 @@ textarea {
 	display: block;
 	width: 100%;
 	height: 60px;
-	font-family: "Jost";
+	font-family: $default_font;
 	font-size: 16px;
-	color: #000;
+	color: $default_color;
 	resize: none;
 	outline: 0;
 	font-weight: 400;
-	background: #fff;
-	border: 2px solid #000;
+	background: $second_bg;
+	border: 2px solid $default_color;
 	border-radius: 30px;
 	-webkit-border-radius: 30px;
 	transition: all 0.7s cubic-bezier(0.3, 0, 0.3, 1);
@@ -434,7 +437,7 @@ label,
 legend {
 	display: block;
 	padding-bottom: 20px;
-	font-family: "Jost";
+	font-family: $default_font;
 	font-size: 20px;
 }
 
@@ -450,9 +453,9 @@ input[type="radio"] {
 
 label.error {
 	padding-top: 5px;
-	font-family: "Jost";
+	font-family: $default_font;
 	font-size: 14px;
-	color: red;
+	color: $error_color;
 	display: none;
 }
 
@@ -509,31 +512,31 @@ pre code {
 /* 라이트 모드 코드 블록 */
 .light-skin pre code,
 body:not(.dark-skin) pre code {
-	background: #2d3748;  /* 어두운 배경 */
-	color: #e2e8f0;       /* 밝은 텍스트 */
-	border: 1px solid #4a5568;
+	background: $light_default_bg;
+	color: $light_default_color;
+	border: 1px solid $light_active_color;
 }
 
 /* 다크 모드 코드 블록 */
 .dark-skin pre code {
-	background: #1a202c;  /* 더 어두운 배경 */
-	color: #e2e8f0;       /* 밝은 텍스트 */
-	border: 1px solid #2d3748;
+	background: $second_bg;
+	color: $default_color;
+	border: 1px solid $active_color;
 }
 
 /* 라이트 모드에서 인라인 코드 */
 .light-skin code:not(pre code),
 body:not(.dark-skin) code:not(pre code) {
-	background: #2d3748;
-	color: #e2e8f0;
+	background: $light_second_bg;
+	color: $light_default_color;
 	padding: 2px 6px;
 	border-radius: 4px;
 }
 
 /* 다크 모드에서 인라인 코드 */
 .dark-skin code:not(pre code) {
-	background: #4a5568;
-	color: #e2e8f0;
+	background: $dark_grey;
+	color: $default_color;
 	padding: 2px 6px;
 	border-radius: 4px;
 }
@@ -573,12 +576,12 @@ blockquote,
 	position: relative;
 	margin: 50px 0 50px 50px;
 	padding: 65px 50px 0 50px!important;
-	font-family: "Jost";
+	font-family: $default_font;
 	font-size: 22px;
 	line-height: 1.3;
-	color: #000;
+	color: $default_color;
 	font-weight: 400;
-	border-left: 1px solid #000;
+	border-left: 1px solid $default_color;
 }
 
 .block-quote:before,
@@ -596,7 +599,6 @@ blockquote:before,
 	height: 44px;
 	background: url(../images/quote.svg) no-repeat;
 	background-size: contain;
-	filter: invert(1);
 }
 
 .block-quote p,
@@ -649,7 +651,7 @@ blockquote cite,
 .wp-block-quote.is-large cite,
 .wp-block-quote.is-style-large cite,
 .wp-block-pullquote cite {
-	font-family: "Jost";
+	font-family: $default_font;
 	font-size: 16px;
 	font-style: normal;
 	display: block;
@@ -657,7 +659,7 @@ blockquote cite,
 	position: relative;
 	text-align: left;
 	font-weight: 700;
-	color: #29a587;
+	color: $active_color;
 }
 
 .block-quote cite em,
@@ -750,7 +752,7 @@ blockquote cite br {
 .wp-block-cover h5:not(.has-text-color),
 .wp-block-cover h6:not(.has-text-color),
 .wp-block-cover p:not(.has-text-color) {
-	color: #fff;
+	color: $white_color;
 }
 
 .bypostauthor {
@@ -767,7 +769,7 @@ blockquote cite br {
 
 .wp-block-calendar a {
 	text-decoration: none;
-	color: #29a587;
+	color: $active_color;
 }
 
 .wp-block-column p:first-child,
@@ -820,7 +822,7 @@ select,
 	border-radius: 6px;
 	-webkit-box-shadow: none;
 	box-shadow: none;
-	color: #000;
+	color: $default_color;
 	line-height: 1;
 	height: 48px;
 	padding: 0 20px;
@@ -912,7 +914,7 @@ hr {
 	background-color: #29a587;
 	border: 1px solid #29a587;
 	border-radius: 28px;
-	color: #fff;
+	color: $white_color;
 	cursor: pointer;
 	font-size: .87rem;
 	font-weight: 600;
@@ -931,7 +933,7 @@ hr {
 
 .is-style-outline .wp-block-button__link {
 	background-color: transparent;
-	color: #29a587;
+	color: $active_color;
 	border: 1px solid #29a587;
 }
 
@@ -1124,10 +1126,10 @@ hr {
 	top: -15px;
 	width: 30px;
 	height: 30px;
-	background: #fff;
-	border: 2px solid #000;
+	background: $second_bg;
+	border: 2px solid $default_color;
 	border-radius: 30px;
-	box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 5px 5px rgba(0, 255, 65, 0.2);
 	z-index: 1;
 }
 
@@ -1138,10 +1140,10 @@ hr {
 	bottom: -15px;
 	width: 30px;
 	height: 30px;
-	background: #fff;
-	border: 2px solid #000;
+	background: $second_bg;
+	border: 2px solid $default_color;
 	border-radius: 30px;
-	box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 5px 5px rgba(0, 255, 65, 0.2);
 	z-index: 1;
 }
 
@@ -1211,14 +1213,14 @@ hr {
 	top: -20vh;
 	width: 120vw;
 	height: 120vh;
-	background: #fff;
+	background: $second_bg;
 }
 
 .preloader .spinner {
 	display: inline-block;
 	width: 15px;
 	height: 15px;
-	background: #29a587;
+	background: $active_color;
 	border-radius: 15px;
 	-webkit-animation: spinner 0.75s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
 	animation: spinner 0.75s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
@@ -1242,7 +1244,7 @@ hr {
 	bottom: 0;
 	width: 100%;
 	height: 2px;
-	background: #29a587;
+	background: $active_color;
 	border-radius: 0;
 	-webkit-animation: spinnerline 1s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
 	animation: spinnerline 1s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
@@ -1421,10 +1423,10 @@ hr {
 	top: 0;
 	display: inline-block;
 	border-radius: 50%;
-	background: #fff;
+	background: $second_bg;
 	opacity: 1!important;
 	position: relative;
-	border: 2px solid #000;
+	border: 2px solid $default_color;
 	transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 	-webkit-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 }
@@ -1445,7 +1447,7 @@ hr {
 	width: 13px;
 	height: 13px;
 	top: 2px;
-	background: #29a587;
+	background: $active_color;
 }
 
 .swiper-button-prev.swiper-button-disabled,
@@ -1588,7 +1590,7 @@ hr {
 
 @media screen and (max-width: 1200px) {
 	.header.sticky {
-		background: #fff;
+		background: $second_bg;
 	}
 }
 
@@ -1642,7 +1644,7 @@ hr {
 	right: -40px;
 	top: -30px;
 	bottom: -30px;
-	background: #fff;
+	background: $second_bg;
 }
 
 .header .navbar:after {
@@ -1823,7 +1825,7 @@ hr {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background: #fff;
+	background: $second_bg;
 	transition: all 1s cubic-bezier(0.3, 0, 0.3, 1);
 	-webkit-transition: all 1s cubic-bezier(0.3, 0, 0.3, 1);
 	-webkit-transform: skew(10deg, 0deg);
@@ -1905,17 +1907,17 @@ hr {
 	vertical-align: top;
 	font-size: 22px;
 	line-height: 1;
-	font-family: "Jost";
+	font-family: $default_font;
 	text-decoration: none;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
-	color: #000;
+	color: $default_color;
 	font-weight: 700;
 }
 
 .menu-full ul li a:hover .char,
 .menu-full ul li a:hover .word {
-	color: #29a587;
+	color: $active_color;
 }
 
 .menu-full ul li ul {
@@ -2000,11 +2002,11 @@ hr {
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	font-family: "Jost";
+	font-family: $default_font;
 	font-size: 20px;
 	line-height: 1;
 	font-weight: 500;
-	color: #000;
+	color: $default_color;
 	text-shadow: none;
 	text-transform: none;
 	letter-spacing: 0;
@@ -2012,15 +2014,15 @@ hr {
 
 .menu-full ul li ul li a:hover .char,
 .menu-full ul li ul li a:hover .word {
-	color: #29a587;
+	color: $active_color;
 }
 
 .menu-full ul li ul li.active>a {
-	color: #29a587;
+	color: $active_color;
 }
 
 .menu-full ul li.active>a {
-	color: #29a587;
+	color: $active_color;
 }
 
 .menu-full ul li.opened > ul {
@@ -2068,7 +2070,7 @@ hr {
 	display: inline-block;
 	vertical-align: top;
 	line-height: 1;
-	color: #000;
+	color: $default_color;
 	text-decoration: none;
 }
 
@@ -2077,7 +2079,7 @@ hr {
 }
 
 .menu-social-links a:hover i {
-	color: #29a587;
+	color: $active_color;
 }
 
 @-webkit-keyframes close-menu-popup {
@@ -2115,14 +2117,14 @@ hr {
 
 .header .logo .logotype__title {
 	display: block;
-	font-family: "Jost";
+	font-family: $default_font;
 	font-size: 22px;
 	line-height: 1;
 	font-weight: 800;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden;
-	color: #000;
+	color: $default_color;
 }
 
 .header .logo .logotype__sub {
@@ -2215,7 +2217,7 @@ hr {
 
 .footer .copyright-text strong, .footer .footer-heading strong,
 .footer .copyright-text b, .footer .footer-heading b {
-	color: #29a587;
+	color: $active_color;
 }
 
 .footer .copyright-text p, .footer .footer-heading p {
@@ -2223,11 +2225,11 @@ hr {
 }
 
 .footer .copyright-text a, .footer .footer-heading a {
-	color: #000;
+	color: $default_color;
 }
 
 .footer .copyright-text a:hover, .footer .footer-heading a:hover {
-	color: #29a587;
+	color: $active_color;
 }
 
 .social-links a {
@@ -2238,13 +2240,13 @@ hr {
 	display: inline-block;
 	vertical-align: top;
 	font-size: 22px;
-	color: #000;
+	color: $default_color;
 	font-weight: 900;
 	text-decoration: none;
 }
 
 .social-links a:hover {
-	color: #29a587;
+	color: $active_color;
 }
 
 
@@ -2258,18 +2260,15 @@ hr {
 }
 
 .lui-gradient-top {
-	background-color: transparent;
-	background-image: linear-gradient(0deg, #FFFFFF 0%, #F0EBE3 100%);
+	background-image: linear-gradient(0deg, #001a04 0%, #000000 100%);
 }
 
 .lui-gradient-bottom {
-	background-color: transparent;
-	background-image: linear-gradient(180deg, #FFFFFF 0%, #F0EBE3 100%);
+	background-image: linear-gradient(180deg, #001a04 0%, #000000 100%);
 }
 
 .lui-gradient-center {
-	background-color: transparent;
-	background-image: linear-gradient(180deg, #F0EBE3 0%, #F0EBE3 100%);
+	background-image: linear-gradient(180deg, #000801 0%, #001a04 50%, #000801 100%);
 }
 
 /**
@@ -2278,7 +2277,7 @@ hr {
 
 .section.section-inner {
 	padding: 0;
-	background: #F0EBE3;
+	background: #000;
 }
 
 .portfolio-template .section.section-inner {
@@ -2298,7 +2297,7 @@ hr {
 .section.section-inner.started-heading {
 	padding-top: 220px;
 	padding-bottom: 120px;
-	background: linear-gradient(180deg, #FFFFFF 0%, #F0EBE3 100%);
+	background: linear-gradient(180deg, #002b00 0%, #000000 100%);
 	z-index: 3;
 }
 
@@ -2318,10 +2317,10 @@ hr {
 .m-titles .m-title {
 	margin-top: 0;
 	margin-bottom: 10px;
-	font-family: "Jost";
+	font-family: $default_font;
 	font-size: 44px;
 	line-height: 1.3;
-	color: #000;
+	color: $default_color;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
@@ -2331,7 +2330,7 @@ hr {
 	position: relative;
 	font-size: 14px;
 	line-height: 1;
-	color: #29a587;
+	color: $active_color;
 	font-weight: 700;
 	z-index: 2;
 	text-transform: uppercase;
@@ -2340,7 +2339,7 @@ hr {
 .m-titles .m-subtitle strong,
 .m-titles .m-subtitle b {
 	font-family: 'Caveat';
-	color: #000;
+	color: $default_color;
 	font-size: 30px;
 	font-weight: 700;
 	letter-spacing: 0;
@@ -2355,10 +2354,10 @@ hr {
 .h-titles .h-title {
 	margin-top: 0;
 	margin-bottom: 0;
-	font-family: "Jost";
+	font-family: $default_font;
 	font-size: 54px;
 	line-height: 1;
-	color: #000;
+	color: $default_color;
 	font-weight: 700;
 	text-align: center;
 	text-transform: uppercase;
@@ -2369,27 +2368,27 @@ hr {
 	position: relative;
 	font-size: 22px;
 	line-height: 1;
-	color: #FFF;
+	color: $white_color;
 	font-weight: 300;
 	z-index: 2;
 }
 
 .h-titles .h-subtitle.red,
 .m-titles .m-subtitle.red {
-	color: #29a587;
+	color: $active_color;
 }
 
 .lui-subtitle {
 	font-size: 13px;
 	font-weight: 700;
-	color: #000;
+	color: $default_color;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 }
 
 .lui-subtitle strong,
 .lui-subtitle b {
-	color: #29a587;
+	color: $active_color;
 }
 
 .lui-text {
@@ -2503,7 +2502,7 @@ hr {
 	width: 680px;
 	height: 680px;
 	z-index: 2;
-	background: #29a587;
+	background: $active_color;
 	border-radius: 100%;
 	-webkit-border-radius: 100%;
 }
@@ -2551,10 +2550,10 @@ hr {
 }
 
 .section.hero-started .title {
-	font-family: "Jost";
+	font-family: $default_font;
 	font-size: 90px;
 	line-height: 1.2;
-	color: #FFF;
+	color: $white_color;
 	font-weight: 700;
 	margin: 15px 0 0 0;
 	text-transform: uppercase;
@@ -2574,7 +2573,7 @@ hr {
 	letter-spacing: 0;
 	text-transform: none;
 	margin-left: 10px;
-	color: #000;
+	color: $default_color;
 }
 
 .section.hero-started .description {
@@ -2614,10 +2613,10 @@ hr {
 	margin: 0;
 	display: flex;
 	align-items: center;
-	color: #000;
-	border: 2px solid #000;
-	background-color: #fff;
-	box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+	color: $default_color;
+	border: 2px solid $default_color;
+	background-color: $second_bg;
+	box-shadow: 5px 5px rgba(0, 255, 65, 0.2);
 	height: 82px;
 	border-radius: 82px;
 	-webkit-border-radius: 82px;
@@ -2665,7 +2664,7 @@ hr {
 .section.hero-started .subtitle b,
 .section.hero-started .title b,
 .section.hero-started .info-list ul li b {
-	color: #29a587;
+	color: $active_color;
 }
 
 /**
@@ -2750,13 +2749,13 @@ hr {
 	display: inline-block;
 	vertical-align: top;
 	font-weight: 700;
-	color: #000;
+	color: $default_color;
 	height: 20px;
 	line-height: 20px;
 }
 
 .skills-item .value .num span {
-	color: #29a587;
+	color: $active_color;
 }
 
 .history-title {
@@ -2850,10 +2849,10 @@ hr {
 	width: 48px;
 	height: 48px;
 	line-height: 40px;
-	background: #fff;
+	background: $second_bg;
 	border-radius: 50%;
-	border: 2px solid #000;
-	box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+	border: 2px solid $default_color;
+	box-shadow: 5px 5px rgba(0, 255, 65, 0.2);
 	font-weight: 400;
 	font-size: 30px;
 	text-align: center;
@@ -2878,7 +2877,7 @@ hr {
 	font-size: 28px;
 	line-height: 40px;
 	font-weight: 700;
-	color: #000;
+	color: $default_color;
 }
 
 .history-item .date {
@@ -2943,7 +2942,7 @@ hr {
 	position: relative;
 	overflow: hidden;
 	padding: 30px 35px;
-	background: #fff;
+	background: $second_bg;
 	border-radius: 18px;
 }
 
@@ -2956,7 +2955,7 @@ hr {
 	font-size: 41px;
 	min-height: 50px;
 	line-height: 1;
-	color: #29a587;
+	color: $active_color;
 }
 
 .services-item .lui-text {
@@ -3013,7 +3012,7 @@ hr {
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	color: #000;
+	color: $default_color;
 	text-decoration: none;
 }
 
@@ -3026,7 +3025,7 @@ hr {
 	width: 0;
 	max-width: 60%;
 	height: 2px;
-	background: #29a587;
+	background: $active_color;
 	transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 	-moz-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 	-webkit-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
@@ -3038,7 +3037,7 @@ hr {
 }
 
 .filter-links a.active {
-	color: #29a587;
+	color: $active_color;
 }
 
 .works-item {
@@ -3129,7 +3128,7 @@ hr {
 	background: rgba(16, 30, 50, 0.5);
 	opacity: 0;
 	font-size: 25px;
-	color: #fff;
+	color: $white_color;
 	line-height: 1;
 	-webkit-transform: scale(1);
 	transition: all 0.6s cubic-bezier(0.3, 0, 0.3, 1);
@@ -3162,21 +3161,21 @@ hr {
 	font-size: 13px;
 	font-weight: 700;
 	letter-spacing: 0.05em;
-	color: #29a587;
+	color: $active_color;
 }
 
 .works-items.works-list-items .works-item .desc .name {
 	margin-bottom: 0;
-	font-family: "Jost";
+	font-family: $default_font;
 	font-size: 58px;
 	line-height: 1;
-	color: #000;
+	color: $default_color;
 	font-weight: 700;
 	display: block;
 }
 
 .works-items.works-list-items .works-item .desc .name a {
-	color: #000;
+	color: $default_color;
 }
 
 .works-items.works-list-items {
@@ -3210,7 +3209,7 @@ hr {
 .works-items.works-masonry-items .works-item {
 	position: relative;
 	padding: 30px;
-	background: #fff;
+	background: $second_bg;
 	border-radius: 20px;
 }
 
@@ -3249,7 +3248,7 @@ hr {
 	font-size: 13px;
 	font-weight: 700;
 	letter-spacing: 0.05em;
-	color: #29a587;
+	color: $active_color;
 }
 
 .works-items.works-masonry-items .works-item .desc .name {
@@ -3257,11 +3256,11 @@ hr {
 }
 
 .works-items.works-masonry-items .works-item .desc .name a {
-	color: #000;
+	color: $default_color;
 }
 
 .works-item:hover .desc .name a {
-	color: #29a587;
+	color: $active_color;
 }
 
 .works-items.works-masonry-items .works-item .desc .text {
@@ -3332,7 +3331,7 @@ hr {
 	position: relative;
 	overflow: hidden;
 	padding: 30px 35px;
-	background: #fff;
+	background: $second_bg;
 	border-radius: 18px;
 	border: 2px solid #fff;
 	transition: all 0.6s cubic-bezier(0.3, 0, 0.3, 1);
@@ -3356,12 +3355,12 @@ hr {
 	line-height: 22px;
 	font-size: 13px;
 	text-transform: uppercase;
-	color: #fff;
+	color: $white_color;
 	letter-spacing: 0.05em;
 	font-weight: 700;
   z-index: 2;
 	display: block;
-	border: 2px solid #000;
+	border: 2px solid $default_color;
   background-color: #29a587;
   box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.2);
 	border-radius: 26px;
@@ -3373,7 +3372,7 @@ hr {
 	font-size: 41px;
 	min-height: 50px;
 	line-height: 1;
-	color: #29a587;
+	color: $active_color;
 }
 
 .pricing-item .price {
@@ -3381,11 +3380,11 @@ hr {
   font-size: 30px;
 	line-height: 1;
 	font-weight: 700;
-	color: #000;
+	color: $default_color;
 }
 
 .pricing-item .price b {
-	color: #29a587;
+	color: $active_color;
 }
 
 .pricing-item .price em {
@@ -3421,7 +3420,7 @@ hr {
 	position: absolute;
 	left: 0;
 	top: 6px;
-	color: #29a587;
+	color: $active_color;
 }
 
 .pricing-item .list ul li em {
@@ -3484,7 +3483,7 @@ hr {
 	position: relative;
 	overflow: hidden;
 	padding: 30px 35px;
-	background: #fff;
+	background: $second_bg;
 	border-radius: 18px;
 }
 
@@ -3514,7 +3513,7 @@ hr {
 	top: 0;
 	width: 66px;
 	height: 66px;
-	background: #fff;
+	background: $second_bg;
 	border-radius: 0 0 18px 0;
 }
 
@@ -3567,11 +3566,11 @@ hr {
 }
 
 .archive-item .desc h5 a {
-	color: #000;
+	color: $default_color;
 }
 
 .archive-item .desc h5 a:hover {
-	color: #29a587;
+	color: $active_color;
 	text-decoration: none;
 }
 
@@ -3599,7 +3598,7 @@ hr {
 	position: relative;
 	overflow: hidden;
 	padding: 30px;
-	background: #fff;
+	background: $second_bg;
 	border-radius: 18px;
 	display: flex;
 	flex-direction: column;
@@ -3671,10 +3670,10 @@ hr {
 	position: absolute;
 	left: 0;
 	top: 0;
-	border: 2px solid #000;
+	border: 2px solid $default_color;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
-	background-color: #fff;
+	background-color: $second_bg;
 	box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.2);
 	width: 56px;
 	height: 56px;
@@ -3700,7 +3699,7 @@ hr {
 	font-size: 30px;
 	line-height: 1;
 	font-weight: 700;
-	color: #000;
+	color: $default_color;
 }
 
 .contacts-form,
@@ -3719,7 +3718,7 @@ hr {
 
 .contacts-form label strong,
 .contacts-form label b {
-	color: #29a587;
+	color: $active_color;
 }
 
 .contacts-form label,
@@ -3918,7 +3917,7 @@ hr {
 }
 
 .m-page-navigation a:hover .h-title {
-	color: #29a587;
+	color: $active_color;
 }
 
 .m-page-navigation .nav-arrow {
@@ -3927,7 +3926,7 @@ hr {
 	display: block;
 	font-size: 14px;
 	line-height: 20px;
-	color: #000;
+	color: $default_color;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
@@ -4024,7 +4023,7 @@ hr {
 	border: 1px solid #999;
 	background: none;
 	font-size: 1rem;
-	color: #000;
+	color: $default_color;
 }
 
 .post-content figure {
@@ -4126,7 +4125,7 @@ pre code {
 
 .post-content ol,
 .post-content ul {
-	color: #000;
+	color: $default_color;
 }
 
 .post-content ol ol,
@@ -4170,7 +4169,7 @@ a.page-numbers,
 	width: 42px;
 	height: 42px;
 	line-height: 42px;
-	color: #000;
+	color: $default_color;
 	font-weight: 700;
 	text-align: center;
 	text-decoration: none;
@@ -4226,8 +4225,8 @@ a.page-numbers.current,
 a.post-page-numbers.current,
 .page-numbers.current,
 .post-page-numbers.current {
-	background: #29a587;
-	color: #fff;
+	background: $active_color;
+	color: $white_color;
 }
 
 
@@ -4264,7 +4263,7 @@ a.post-page-numbers.current,
 .wc-block-product-search__fields input[type="search"] {
 	position: relative;
 	padding: 0 20px;
-	color: #000;
+	color: $default_color;
 	font-size: 18px;
 	height: 48px;
 	width: 100%;
@@ -4337,7 +4336,7 @@ input.search-submit,
 	bottom: -20px;
 	width: 30px;
 	height: 4px;
-	background: #29a587;
+	background: $active_color;
 	-webkit-transition: opacity 0.3s linear, color 0.3s linear, -webkit-transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 	transition: opacity 0.3s linear, color 0.3s linear, -webkit-transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 	-o-transition: transform 0.3s cubic-bezier(0.3, 0, 0.3, 1), opacity 0.3s linear, color 0.3s linear;
@@ -4363,7 +4362,7 @@ input.search-submit,
 
 .content-sidebar ul li a,
 .post-content .wp-block-archives li a {
-	color: #000;
+	color: $default_color;
 	text-decoration: none;
 	-webkit-transition: opacity 0.3s linear, color 0.3s linear, -webkit-transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 	transition: opacity 0.3s linear, color 0.3s linear, -webkit-transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
@@ -4375,7 +4374,7 @@ input.search-submit,
 
 .content-sidebar ul li a:hover,
 .post-content .wp-block-archives li a:hover {
-	color: #29a587;
+	color: $active_color;
 	text-decoration: underline;
 }
 
@@ -4435,7 +4434,7 @@ input.search-submit,
 }
 
 .wp-block-calendar tfoot a {
-	color: #000;
+	color: $default_color;
 }
 
 .content-sidebar a {
@@ -4479,7 +4478,7 @@ input.search-submit,
 .content-sidebar ul li a.rsswidget,
 .wp-block-rss li a {
 	display: block;
-	color: #000;
+	color: $default_color;
 	font-weight: 700;
 	text-decoration: none;
 }
@@ -4522,7 +4521,7 @@ input.search-submit,
 	font-size: 14px !important;
 	line-height: 1;
 	font-weight: 700;
-	color: #000;
+	color: $default_color;
 	text-transform: none;
 	text-decoration: none;
 	border: 1px solid #29a587;
@@ -4662,11 +4661,11 @@ small {
 .comment-box__details {
 	font-size: 20px;
 	margin-bottom: 10px;
-	color: #000;
+	color: $default_color;
 }
 
 .comment-box__details a {
-	color: #000;
+	color: $default_color;
 }
 
 .comment-box__details span {
@@ -4704,7 +4703,7 @@ small {
 	padding: 0;
 	font-weight: 400;
 	font-size: 16px;
-	color: #000;
+	color: $default_color;
 	display: inline;
 	text-transform: none;
 	letter-spacing: 0;
@@ -4801,13 +4800,13 @@ h5.comment-box__details {
 	border: 1px solid #999;
 	border-radius: 100%;
 	font-size: 18px;
-	color: #000;
+	color: $default_color;
 	transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 	-webkit-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 }
 
 .share-post .share-btn:hover {
-	color: #29a587;
+	color: $active_color;
 	border-color: #29a587;
 }
 
@@ -4904,7 +4903,7 @@ form.post-password-form label {
 	background-color: #29a587;
 	border: 0;
 	border-radius: 5rem;
-	color: #fff;
+	color: $white_color;
 	cursor: pointer;
 	font-weight: 600;
 	display: inline-block;
@@ -5019,15 +5018,15 @@ form.post-password-form label {
 }
 
 .is-style-outline>.wp-block-button__link:not(.has-text-color), .wp-block-button__link.is-style-outline:not(.has-text-color) {
-	color: #29a587;
+	color: $active_color;
 }
 
 a.wp-block-button__link {
-	color: #fff;
+	color: $white_color;
 }
 
 .wp-block-cover p:not(.has-text-color) a {
-	color: #fff;
+	color: $white_color;
 }
 
 .wp-block-group.has-background {
@@ -5036,7 +5035,7 @@ a.wp-block-button__link {
 }
 
 .wp-block-group.has-background p, .wp-block-media-text.has-background {
-	color: #000;
+	color: $default_color;
 }
 
 .wp-block-group.has-background p:first-child {
@@ -5060,7 +5059,7 @@ a.wp-block-button__link {
 }
 
 .error-page__num {
-	color: #29a587;
+	color: $active_color;
 	font-size: 220px;
 	display: block;
 	height: auto;
@@ -5485,7 +5484,7 @@ a.wp-block-button__link {
 		opacity: 1;
 	}
 	.works-items.works-list-items .works-item {
-		background: #fff;
+		background: $second_bg;
 		border-radius: 20px;
 	}
 	.works-items.works-list-items .works-item .image {

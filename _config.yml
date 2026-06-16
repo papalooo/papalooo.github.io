@@ -29,10 +29,12 @@
 # in the templates via {{ site.myvariable }}.
 
 # basic settings
-title: "papalooo's portfolio"
+title: "장수혁 - 사이버보안 포트폴리오"
 email: "papalooo@naver.com"
-description: "my poly26 portfolio page"
-author: "papalooo"
+description: "사이버보안을 전공한 학생 장수혁의 포트폴리오. 개발, 해킹기법, 최신 기술 동향 등 다향한 관심사가 있습니다."
+author: "장수혁"
+lang: "ko"
+local: "ko_KR"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://papalooo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 date_format: "%Y-%m-%d"
@@ -67,6 +69,8 @@ jekyll-archives:
   permalinks:
     category: /categories/:name/
     tag: /tags/:name/
+
+google_analytics: G-499BCNDC02
 
 # Build settings
 plugins:

@@ -10,7 +10,7 @@ hero:
   before_title: "환영합니다, <b>제 이름은</b>"
   title: "<b>Suhyeok </b> Jang"
   after_title: "I am <strong>Cyber Security Professional</strong>"
-  description: "폴리텍 대학 강서캠퍼스 사이버 보안과 2학년 입니다."
+  description: "AI 와 해킹에 관심이 많은 사이버보안학과 학생입니다."
   button1:
     label: "이력서 보기"
     link: "#resume-section"
@@ -210,11 +210,11 @@ pricing:
 ### Blog [ blog ]
 #items generates from dir /_posts/*
 blog:
-  title: "Latest Blog"
-  subtitle: "my <b>Articles and Advice</b>"
+  title: "블로그"
+  subtitle: "기술 <b>기록</b>"
   bg_title: "Blog"
   button:
-    label: "View Blog"
+    label: "모든 글 보기"
     link: "blog/"
 
 
